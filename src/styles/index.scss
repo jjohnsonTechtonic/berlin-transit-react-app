@@ -1,0 +1,90 @@
+$dark-gray: #222;
+$light-gray: rgb(58, 58, 58);
+$almost-white: #eee;
+$sky-blue: #0af;
+$warning-orange: #e70;
+$urgent-red: #f40;
+
+$route-card-height: 300px;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+input{
+    padding: 0.5rem;
+}
+a{
+    color: $almost-white;
+    text-decoration: none;
+}
+#root{
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: $light-gray;
+    height: 100vh;
+}
+
+.search-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-width: max-content;
+}
+.routes-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    color: $almost-white;
+    overflow-y: scroll;
+    width: 100%;
+}
+.routes{
+    width: max-content;
+    &:first-child{
+        border-top-style: none;
+    }
+    
+}
+
+.route-item{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $dark-gray;
+    justify-content: space-between;
+    align-content: center;
+    width: min-content;
+    max-height: $route-card-height;
+    overflow-y: scroll;
+    padding-bottom: 1rem;
+    &__main-info{
+        &--delayed{
+            color: $urgent-red;
+        }
+    }
+    &__extras{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 1rem;
+    }
+    &__warnings{
+        margin-left: 2rem;
+        color: $warning-orange;
+        width: 20vw;
+        overflow-y: scroll;
+    }
+}
+
+.btn{
+    padding: 0.5rem;
+    background-color: $dark-gray;
+    color: $almost-white;
+    border-style: none;
+    &:hover{
+        background-color: $sky-blue;
+        color: $dark-gray;
+        cursor: pointer;
+    }
+}

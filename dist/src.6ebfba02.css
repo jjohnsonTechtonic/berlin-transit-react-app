@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+input {
+  padding: 0.5rem; }
+
+a {
+  color: #eee;
+  text-decoration: none; }
+
+#root {
+  display: flex;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #3a3a3a;
+  height: 100vh; }
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  min-width: max-content; }
+
+.routes-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  color: #eee;
+  overflow-y: scroll;
+  width: 100%; }
+
+.routes {
+  width: max-content; }
+  .routes:first-child {
+    border-top-style: none; }
+
+.route-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #222;
+  justify-content: space-between;
+  align-content: center;
+  width: min-content;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding-bottom: 1rem; }
+  .route-item__main-info--delayed {
+    color: #f40; }
+  .route-item__extras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 1rem; }
+  .route-item__warnings {
+    margin-left: 2rem;
+    color: #e70;
+    width: 20vw;
+    overflow-y: scroll; }
+
+.btn {
+  padding: 0.5rem;
+  background-color: #222;
+  color: #eee;
+  border-style: none; }
+  .btn:hover {
+    background-color: #0af;
+    color: #222;
+    cursor: pointer; }
+
+
+/*# sourceMappingURL=/src.6ebfba02.css.map */
